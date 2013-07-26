@@ -1,2 +1,4 @@
+removed_sources:
+  RT-Client-REST-0.41.tar.gz: cc1785bc2230a86db724fa9f77db126906951458
 sources:
-  "RT-Client-REST-0.41.tar.gz": cc1785bc2230a86db724fa9f77db126906951458
+  RT-Client-REST-0.43.tar.gz: b6d7db847978fdb80566513b0f07b49ba10eee70
