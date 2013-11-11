@@ -1,15 +1,15 @@
 %define upstream_name    RT-Client-REST
-%define upstream_version 0.43
+%define upstream_version 0.44
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 0.43
+Version:	%perl_convert_version %{upstream_version}
 Release:	1
 
 Summary:	Talk to RT using REST protocol
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/RT/RT-Client-REST-0.43.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/RT/RT-Client-REST-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Encode)
@@ -58,4 +58,5 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Fri Apr 30 2010 cpan2dist 0.4-1mdv
 - initial mdv release, generated with cpan2dist
+
 
