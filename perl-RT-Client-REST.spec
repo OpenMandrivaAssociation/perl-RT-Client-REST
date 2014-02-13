@@ -1,5 +1,5 @@
 %define upstream_name    RT-Client-REST
-%define upstream_version 0.44
+%define upstream_version 0.45
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -60,5 +60,6 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Fri Apr 30 2010 cpan2dist 0.4-1mdv
 - initial mdv release, generated with cpan2dist
+
 
 
