@@ -1,15 +1,16 @@
 %define upstream_name    RT-Client-REST
-%define upstream_version 0.45
+%define upstream_version 0.48
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
 Release:	1
 
 Summary:	Talk to RT using REST protocol
+
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/RT/RT-Client-REST-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/RT/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires: perl(DateTime::Format::DateParse)
@@ -47,19 +48,5 @@ perl Makefile.PL INSTALLDIRS=vendor
 %doc META.yml CHANGES README
 %{_mandir}/man3/*
 %{perl_vendorlib}/RT/
-
-%changelog
-* Tue Jul 13 2010 Jérôme Quelin <jquelin@mandriva.org> 0.410.0-1mdv2011.0
-+ Revision: 552625
-- update to 0.41
-
-* Fri Apr 30 2010 Michael Scherer <misc@mandriva.org> 0.400.0-1mdv2010.1
-+ Revision: 541122
-- import perl-RT-Client-REST
-
-
-* Fri Apr 30 2010 cpan2dist 0.4-1mdv
-- initial mdv release, generated with cpan2dist
-
 
 
